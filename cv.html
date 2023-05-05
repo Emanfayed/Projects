@@ -1,0 +1,66 @@
+<html>
+<head>
+<title> My CV | Eman Fayed </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor=#7D0000>
+<center><img src="photo.jpg" width="150px" height="200px"></center>
+<center><h1> Eman Fayed </h1></center>
+<hr>
+<div class="row">
+  <div class="column">
+<h3> Personal Information </h3>
+<h5><b>Address:</b>Tanta </h5>
+<h5>Phone Number:012463256324 </h5>
+<h5>Data of Birth:2/2/2000 </h5>
+<h5>E-mail:eman2019@gmail.com </h5>
+<h5>Age:22 </h5>
+<hr>
+<h3>Work Experiances </h3>
+<h5>Training at Bank Misr</h5>
+<h5>I worked at Microsoft Corporation</h5>
+<h5>I trained at Misr Makasaa Company</h5>
+<center><button class="button" onclick="time();"> Time </button></center><br>
+<center><h5 id="time"></h5></center>
+</div>
+<div class="column">
+<h3>Skills</h3>
+<h5>Languages(AR-EN)</h5>
+<h5>Computer Skills</h5>
+<h5>MS Office apps</h5>
+<hr>
+<h3>Soft Skills</h3>
+<h5>Communication skills </h5>
+<h5>Presentation</h5>
+<h5>Time Managment</h5
+<h5>Team work</h5>
+<h5>Project Managment</h5>
+<hr>
+<h3>Education</h3>
+<p>I graduted from faculty of commerce department BIS Tanta University</p>
+<hr>
+<h3>References</h3>
+<h5>Available upon request</h5>
+</div>
+</div>
+<script>
+  function time(){
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 10) 
+         {
+            greeting = "Good morning Everybody";
+         } 
+        else if (time < 20)
+         {
+            greeting = "Good day Everybody";
+         } 
+        else {
+          greeting = "Good evening Everybody";
+             }
+          document.getElementById("time").innerHTML = greeting;
+
+}
+</script>
+</body>
+</html>
